@@ -5,10 +5,10 @@
       "C:\\Users\\Daniel\\Desktop\\assac-application"
     ]
   ],
-  "_from": "react-native-gifted-chat-assac@0.4.3",
-  "_id": "react-native-gifted-chat-assac@0.4.3",
+  "_from": "react-native-gifted-chat-assac@^0.4.4",
+  "_id": "react-native-gifted-chat-assac@0.4.4",
   "_inBundle": false,
-  "_integrity": "sha512-4HPTZfkVZu3EOugjD1Ij3WntnyrMf2nphsi2OHCgql3klIAEUoP2iAaKVjXxu/2CB0Td8Mr1pLTPr4Q2oOdCmQ==",
+  "_integrity": "sha512-pA69K5O0tlOp0/cA8h2tjih1xxs/I+vlyy1+F4ajFNuRQxcCqn9eOYwdWGtlAvzEEvFpPPVaDQVxOtXerSxI1A==",
   "_location": "/react-native-gifted-chat-assac",
   "_phantomChildren": {
     "fbjs": "0.8.16",
@@ -16,20 +16,21 @@
     "object-assign": "4.1.1"
   },
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "react-native-gifted-chat-assac@0.4.3",
+    "raw": "react-native-gifted-chat-assac@^0.4.4",
     "name": "react-native-gifted-chat-assac",
     "escapedName": "react-native-gifted-chat-assac",
-    "rawSpec": "0.4.3",
+    "rawSpec": "^0.4.4",
     "saveSpec": null,
-    "fetchSpec": "0.4.3"
+    "fetchSpec": "^0.4.4"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-gifted-chat-assac/-/react-native-gifted-chat-assac-0.4.3.tgz",
-  "_spec": "0.4.3",
+  "_resolved": "https://registry.npmjs.org/react-native-gifted-chat-assac/-/react-native-gifted-chat-assac-0.4.4.tgz",
+  "_shasum": "56d1f4f7e854b209cefe49e0736cdb1e578523c4",
+  "_spec": "react-native-gifted-chat-assac@^0.4.4",
   "_where": "C:\\Users\\Daniel\\Desktop\\assac-application",
   "author": {
     "name": "Farid Safi"
@@ -37,6 +38,7 @@
   "bugs": {
     "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "@expo/react-native-action-sheet": "^1.0.1",
     "md5": "2.2.1",
@@ -44,11 +46,12 @@
     "prop-types": "15.6.1",
     "react-native-communications": "2.2.1",
     "react-native-invertible-scroll-view": "^1.1.0",
-    "react-native-lightbox": "^0.7.0",
+    "react-native-file-viewer": "^1.0.7",
     "react-native-parsed-text": "^0.0.20",
     "shallowequal": "1.0.2",
     "uuid": "3.2.1"
   },
+  "deprecated": false,
   "description": "The most complete chat UI for React Native",
   "devDependencies": {
     "@types/react": "^16.0.38",
