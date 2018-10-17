@@ -1,33 +1,53 @@
 /* eslint no-use-before-define: ["error", { "variables": false }] */
 
 import PropTypes from 'prop-types';
-import React from 'react';
-import { Image, StyleSheet, View, ViewPropTypes } from 'react-native';
-import Lightbox from 'react-native-lightbox';
+import React, { Component } from 'react';
+import { Image, StyleSheet, View, ViewPropTypes ,TouchableOpacity} from 'react-native';
+import FileViewer from 'react-native-file-viewer';
 
-export default function MessageImage({
-  containerStyle,
-  lightboxProps,
-  imageProps,
-  imageStyle,
-  currentMessage,
-}) {
-  return (
-    <View style={[styles.container, containerStyle]}>
-      <Lightbox
-        activeProps={{
-          style: styles.imageActive,
-        }}
-        {...lightboxProps}
-      >
+export default class MessageImage extends Component {
+  constructor(props){
+    super(props)
+    this.state ={imagePath: null}
+   }
+  
+  componentWillMount() {
+    mediaExtansions = ["gif","ico","jpeg","png","jpg"]
+    mediaExtansions.find((extension) => {
+      if(this.props.currentMessage.image.split('.').pop() == extension) {
+        this.state.imagePath = "file://" + this.props.currentMessage.image;
+        return;
+      }
+    })
+    if(this.state.imagePath == null) {
+      this.state.imagePath = "https://cdn3.iconfinder.com/data/icons/brands-applications/512/File-512.png"
+    }
+  }
+
+  openFile = () => {
+      FileViewer.open(this.props.currentMessage.image, { showOpenWithDialog: true })
+      .then(() => {
+        // success
+      })
+      .catch(error => {
+        // error
+      });
+  }
+
+  render() {
+    return (
+    <View style={[styles.container, this.props.containerStyle]}>
+      <TouchableOpacity
+         onPress={this.openFile}
+       >
         <Image
-          {...imageProps}
-          style={[styles.image, imageStyle]}
-          source={{ uri: "file://" + currentMessage.image }}
+          {...this.props.imageProps}
+          style={[styles.image, this.props.imageStyle]}
+          source={{ uri: this.state.imagePath }}
         />
-      </Lightbox>
+        </TouchableOpacity>
     </View>
-  );
+  )}
 }
 
 const styles = StyleSheet.create({
