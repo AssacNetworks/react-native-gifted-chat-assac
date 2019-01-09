@@ -311,7 +311,7 @@ class GiftedChat extends React.Component {
           bottom: 2
         }}
       >
-        <MessageContainer
+        <MessageContainer 
           {...this.props}
           invertibleScrollViewProps={this.invertibleScrollViewProps}
           messages={this.getMessages()}
@@ -477,7 +477,7 @@ class GiftedChat extends React.Component {
     if (this.state.isInitialized === true) {
       return (
         <ActionSheet ref={(component) => (this._actionSheetRef = component)}>
-          <View style={styles.container} onLayout={this.onMainViewLayout}>
+          <View style={[styles.container,styles.bgcolor]} onLayout={this.onMainViewLayout}>
             {this.renderMessages()}
             {this.renderInputToolbar()}
           </View>
@@ -494,6 +494,9 @@ class GiftedChat extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  bgcolor:{
+    backgroundColor:'white'
+  },
   container: {
     flex: 1,
   },

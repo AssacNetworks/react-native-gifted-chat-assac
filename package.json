@@ -1,14 +1,14 @@
 {
   "_args": [
     [
-      "react-native-gifted-chat-assac@0.4.3",
-      "C:\\Users\\Daniel\\Desktop\\assac-application"
+      "react-native-gifted-chat-assac@0.4.6",
+      "C:\\work\\assac-application"
     ]
   ],
-  "_from": "react-native-gifted-chat-assac@^0.4.4",
-  "_id": "react-native-gifted-chat-assac@0.4.4",
+  "_from": "react-native-gifted-chat-assac@0.4.6",
+  "_id": "react-native-gifted-chat-assac@0.4.6",
   "_inBundle": false,
-  "_integrity": "sha512-pA69K5O0tlOp0/cA8h2tjih1xxs/I+vlyy1+F4ajFNuRQxcCqn9eOYwdWGtlAvzEEvFpPPVaDQVxOtXerSxI1A==",
+  "_integrity": "sha512-f1p28jnExCDD5HBzSDfxMuLnogusQj6kZWWcmAGbnGVFIqXkMt94QbGLq9/YpG4Tl7+inYOLEFPIHmXfWf/cjg==",
   "_location": "/react-native-gifted-chat-assac",
   "_phantomChildren": {
     "fbjs": "0.8.16",
@@ -16,22 +16,22 @@
     "object-assign": "4.1.1"
   },
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "react-native-gifted-chat-assac@^0.4.4",
+    "raw": "react-native-gifted-chat-assac@0.4.6",
     "name": "react-native-gifted-chat-assac",
     "escapedName": "react-native-gifted-chat-assac",
-    "rawSpec": "^0.4.4",
+    "rawSpec": "0.4.6",
     "saveSpec": null,
-    "fetchSpec": "^0.4.4"
+    "fetchSpec": "0.4.6"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-gifted-chat-assac/-/react-native-gifted-chat-assac-0.4.4.tgz",
+  "_resolved": "https://registry.npmjs.org/react-native-gifted-chat-assac/-/react-native-gifted-chat-assac-0.4.6.tgz",
   "_shasum": "56d1f4f7e854b209cefe49e0736cdb1e578523c4",
-  "_spec": "react-native-gifted-chat-assac@^0.4.4",
-  "_where": "C:\\Users\\Daniel\\Desktop\\assac-application",
+  "_spec": "0.4.6",
+  "_where": "C:\\work\\assac-application",
   "author": {
     "name": "Farid Safi"
   },
@@ -45,8 +45,8 @@
     "moment": "^2.19.0",
     "prop-types": "15.6.1",
     "react-native-communications": "2.2.1",
-    "react-native-invertible-scroll-view": "^1.1.0",
     "react-native-file-viewer": "^1.0.7",
+    "react-native-invertible-scroll-view": "^1.1.0",
     "react-native-parsed-text": "^0.0.20",
     "shallowequal": "1.0.2",
     "uuid": "3.2.1"

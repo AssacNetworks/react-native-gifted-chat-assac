@@ -40,7 +40,7 @@ export default class Composer extends React.Component {
         onChangeText={(text) => this.onChangeText(text)}
         style={[styles.textInput, this.props.textInputStyle, { height: this.props.composerHeight }]}
         autoFocus={this.props.textInputAutoFocus}
-        value={this.props.text}
+        value={Platform.OS === 'ios' ? this.props.text : null}
         accessibilityLabel={this.props.text || this.props.placeholder}
         enablesReturnKeyAutomatically
         underlineColorAndroid="transparent"
