@@ -105,11 +105,19 @@ export default class Bubble extends React.Component {
     if (currentMessage.user._id !== this.props.user._id) {
       return null;
     }
-    if (currentMessage.sent || currentMessage.received) {
+    if (currentMessage.sent || currentMessage.received || currentMessage.pending) {
       return (
         <View style={styles.tickView}>
           {currentMessage.sent && <Text style={[styles.tick, this.props.tickStyle]}>✓</Text>}
           {currentMessage.received && <Text style={[styles.tick, this.props.tickStyle]}>✓</Text>}
+          {currentMessage.pending && <Text style={[styles.tick, this.props.tickStyle]}>🕓</Text>}
+        </View>
+      );
+    }
+    else {
+      return (
+        <View style={styles.tickView}>
+          {<Text style={[styles.tick, this.props.tickStyle]}>❌</Text>}
         </View>
       );
     }
